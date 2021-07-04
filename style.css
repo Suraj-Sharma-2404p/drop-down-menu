@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+
+}
+body{
+    background-image:url(background/v546batch3-mynt-34-badgewatercolor_1.jpg);
+    background-size:cover;
+    background-position: center;
+    font-family: sans-serif;
+}
+.menu-bar{
+    background-color: green;
+    text-align: center;
+}
+.menu-bar ul{
+    display: inline-flex;
+    list-style: none;
+    color: white;
+}
+.menu-bar ul li{
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+}
+.menu-bar ul li a{
+    text-decoration: none;
+    color: white;
+}
+.active, .menu-bar ul li:hover{
+background:goldenrod;
+border-radius: 10px;
+}
+.menu-bar .fas{
+    margin-right: 9px;
+}
+.sub-menu1{
+    display: none;
+}
+.menu-bar ul li:hover .sub-menu1{
+    display: block;
+    position: absolute;
+    margin-top: 15px;
+    margin-left: -15px;
+    background-color: green;
+
+}
+.menu-bar ul li:hover .sub-menu1 ul{
+    display: block;
+    margin: 10px;
+
+}
+.menu-bar ul li:hover .sub-menu1 ul li{
+    width: 150px;
+    border-radius: 0;
+    padding: 10px;
+    border-bottom: 1px dotted white;
+    background-color: transparent;
+    text-align: left;
+}
+.menu-bar ul li:hover .sub-menu1 ul li:last-child{
+    border-bottom: none;
+}
+.menu-bar ul li:hover .sub-menu1 ul li a:hover{
+    color: yellowgreen;
+}
+.fa-angle-right{
+    float: right;
+}
